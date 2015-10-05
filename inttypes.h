@@ -41,7 +41,7 @@
 #pragma once
 #endif
 
-#if defined (SDCC) || defined (__SDCC)
+#if (defined (SDCC) || defined (__SDCC)) || (defined (__CODEGEARC__) || defined (__BORLANDC__))
 #include <stdint.h>
 #else
 #include "stdint.h"
